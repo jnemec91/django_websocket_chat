@@ -1,0 +1,63 @@
+{% load static %}  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app with channels and websocket</title>
+    <link rel="stylesheet" href="{% static 'chatapp/css/chatapp.css' %}">
+    <link rel="shortcut icon" href="{% static 'chatapp/images/favicon.ico' %}" type="image/x-icon">
+    <script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/178cd86837.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="page-wraper">
+        <div class="chat-window">
+            <h6 class="window-name">WChat-alpha</h6>
+            <div class="message-box" id="message-box">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque architecto,
+                 velit similique explicabo natus voluptates deleniti sint, omnis vel, ipsum alias temporibus laudantium sed delectus ipsa eum facilis! Hic
+                 \, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repudiandae totam neque sapiente suscipit dolorem doloribus quaerat quasi
+                 , dignissimos nesciunt hic excepturi architecto deserunt eligendi libero delectus optio nemo? Laudantium!libero Lorem ipsum dolor sit amet 
+                 consectetur adipisicing elit. Ipsum necessitatibus quibusdam fugiat recusandae quas! Amet animi architecto totam saepe quaerat ad molestiae provident inventore.
+                  Porro ullam quasi aut aperiam deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad repellat doloribus nihil illum tempore deserunt n
+                  emo saepe odio porro nam dicta quos voluptatum quidem, quia eaque veritatis, quasi perspiciatis!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque architecto,
+                 velit similique explicabo natus voluptates deleniti sint, omnis vel, ipsum alias temporibus laudantium sed delectus ipsa eum facilis! Hic
+                 \, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repudiandae totam neque sapiente suscipit dolorem doloribus quaerat quasi
+                 , dignissimos nesciunt hic excepturi architecto deserunt eligendi libero delectus optio nemo? Laudantium!libero Lorem ipsum dolor sit amet 
+                 consectetur adipisicing elit. Ipsum necessitatibus quibusdam fugiat recusandae quas! Amet animi architecto totam saepe quaerat ad molestiae provident inventore.
+                  Porro ullam quasi aut aperiam deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad repellat doloribus nihil illum tempore deserunt n
+                  emo saepe odio porro nam dicta quos voluptatum quidem, quia eaque veritatis, quasi perspiciatis!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque architecto,
+                 velit similique explicabo natus voluptates deleniti sint, omnis vel, ipsum alias temporibus laudantium sed delectus ipsa eum facilis! Hic
+                 \, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repudiandae totam neque sapiente suscipit dolorem doloribus quaerat quasi
+                 , dignissimos nesciunt hic excepturi architecto deserunt eligendi libero delectus optio nemo? Laudantium!libero Lorem ipsum dolor sit amet 
+                 consectetur adipisicing elit. Ipsum necessitatibus quibusdam fugiat recusandae quas! Amet animi architecto totam saepe quaerat ad molestiae provident inventore.
+                  Porro ullam quasi aut aperiam deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad repellat doloribus nihil illum tempore deserunt n
+                  emo saepe odio porro nam dicta quos voluptatum quidem, quia eaque veritatis, quasi perspiciatis!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque architecto,
+                 velit similique explicabo natus voluptates deleniti sint, omnis vel, ipsum alias temporibus laudantium sed delectus ipsa eum facilis! Hic
+                 \, eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repudiandae totam neque sapiente suscipit dolorem doloribus quaerat quasi
+                 , dignissimos nesciunt hic excepturi architecto deserunt eligendi libero delectus optio nemo? Laudantium!libero Lorem ipsum dolor sit amet 
+                 consectetur adipisicing elit. Ipsum necessitatibus quibusdam fugiat recusandae quas! Amet animi architecto totam saepe quaerat ad molestiae provident inventore.
+                  Porro ullam quasi aut aperiam deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ad repellat doloribus nihil illum tempore deserunt n
+                  emo saepe odio porro nam dicta quos voluptatum quidem, quia eaque veritatis, quasi perspiciatis!
+                </p>                
+                </div>
+            <div class="input-wrapper">
+                <input class="chat-input" type="text" name="message" id="message">
+                <button type="button" class="chat-button"><i class="fa-solid fa-comment"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
