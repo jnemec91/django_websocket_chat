@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'chatapp.apps.ChatappConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -71,6 +72,18 @@ TEMPLATES = [
         },
     },
 ]
+
+# Daphne
+ASGI_APPLICATION = "chat_app_project.asgi.application"
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [("127.0.0.1", 6379)],
+        },
+    },
+}
+
 
 WSGI_APPLICATION = 'chat_app_project.wsgi.application'
 
